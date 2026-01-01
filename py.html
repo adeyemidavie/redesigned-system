@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button class="btn btn-primary" onclick="myFunction()">Click me</button>
+    <p id="demo"></p>
+    <p id="omed"></p>
+    <script>
+        function myFunction() {
+            let day;
+            switch (new Date().getDay()) {
+                case 0:
+                    day = "sunday";
+                    break;
+                case 1:
+                    day = "monday";
+                    break;
+                case 2:
+                    day = "tuesday";
+                    break;
+                case 3:
+                    day = "wednesday";
+                    break;
+                case 4:
+                    day = "thursday";
+                    break;
+                case 5:
+                    day = "friday";
+                    break;
+                case 6:
+                    day = "saturday";
+                    break;
+                case 7:
+                    day = "sunday";
+                    break;
+            }
+            document.getElementById("demo").innerHTML = "<br>today is " + day;
+            document.getElementById("omed").innerHTML = Date();
+        }
+
+        document.getElementById("demo").innerHTML = "what is today's date? 🤔";
+        let letter = "letterubjjnjngjrnjtjtntjgjgjgjgj";
+        document.getElementById("omed").innerHTML = letter.length;
+
+
+    </script>
+</body>
+
+</html>
