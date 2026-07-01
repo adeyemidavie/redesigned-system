@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Nova AI</title>
+
+    <link rel="icon"
+          href="{{ url_for('static', filename='favicon.png') }}">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="layout">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-top">
+
+            <div class="logo">
+
+                🤖 Nova AI
+
+            </div>
+
+            <button
+                id="new-chat-btn"
+                class="new-chat">
+
+                + New Chat
+
+            </button>
+
+        </div>
+
+        <div
+            id="chat-list"
+            class="chat-list">
+
+        </div>
+
+        <div class="sidebar-bottom">
+
+            <button class="settings">
+
+                ⚙ Settings
+
+            </button>
+
+        </div>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main class="main">
+
+        <header class="header">
+
+            <div>
+
+                <h2>
+
+                    Nova AI
+
+                </h2>
+
+                <p>
+
+                    Running locally with Ollama
+
+                </p>
+
+            </div>
+
+            <div class="status">
+
+                🟢 Connected
+
+            </div>
+
+        </header>
+
+        <section
+            id="chat-box"
+            class="chat-box">
+
+            <div class="welcome">
+
+                <h1>
+
+                    Good Afternoon 👋
+
+                </h1>
+
+                <p>
+
+                    What shall we build today?
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <section
+            id="preview-area">
+
+        </section>
+
+        <footer class="input-area">
+
+            <label
+                class="icon-button"
+                for="file-input">
+
+                📎
+
+            </label>
+
+            <input
+                type="file"
+                id="file-input"
+                hidden>
+
+            <button
+                class="icon-button"
+                id="image-btn">
+
+                🖼️
+
+            </button>
+
+            <button
+                class="icon-button"
+                id="voice-btn">
+
+                🎤
+
+            </button>
+
+            <textarea
+
+                id="message"
+
+                rows="1"
+
+                placeholder="Message Nova AI..."></textarea>
+
+            <button
+
+                id="send-btn">
+
+                ➤
+
+            </button>
+
+        </footer>
+
+    </main>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
